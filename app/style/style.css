@@ -6,4 +6,48 @@
 
 :root {
 	font-size: 62.5%;
+	background-color: #2F2F33;
+	
 }
+
+/*MAIN PAGE - NAV MENU*/
+
+nav {
+	display: flex;
+	align-items: center;
+	font-size: 2.4rem;
+	width: 100%;
+	height: 12.2rem;
+}
+
+ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	align-items: center;
+	width: 49rem;
+	margin-left: 7.2rem;
+	
+}
+
+nav a {
+	text-decoration: none;
+	color: #c4c4cc;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+	color: #ffffff;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+/*MAIN PAGE - NAV MENU END*/
+
+
+/*begin page*/
+
+.begin
+
+/*begin page end*/
+

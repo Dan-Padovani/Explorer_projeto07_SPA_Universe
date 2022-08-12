@@ -16,10 +16,13 @@
 }
 
 body {
-	background-image: url('/app/assets/home.png');
+	/* background-image: url('/app/assets/home.png');
 	background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+
+	width: 100%;
+	height: 100%;
 }
 
 /*MAIN PAGE - NAV MENU*/
@@ -56,12 +59,22 @@ nav a:hover {
 }
 
 h1 {
-	color: var(--fc-secondary);
 	font-weight: 700;
 	font-size: 4.8rem;
 	font-family: var(--ff-primary);
 	line-height: 6rem;
 	margin-bottom: 2.4rem;
+	color: var(--fc-secondary);
+}
+
+p {
+	font-family: var(--ff-primary);
+	font-size: 1.8rem;
+	line-height: 2.9rem;
+	text-align: left;
+	color: var(--fc-secondary);
+	width: 64.8rem;
+	margin-left: 10rem;
 }
 
 
@@ -106,3 +119,18 @@ h1 {
 }
 /*begin page end*/
 
+
+/*universe page*/
+body.universe {
+	background-image: url('/app/assets/universe.png');
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.universe h1 {
+	margin-left: 10rem;
+}
+
+
+/*universe page end*/

@@ -26,7 +26,6 @@ body {
 }
 
 /*MAIN PAGE - NAV MENU*/
-
 nav {
 	display: flex;
 	align-items: center;
@@ -57,6 +56,8 @@ nav a:hover {
 	font-weight: 700;
 	transition: 0.5s;
 }
+/*MAIN PAGE - NAV MENU END*/
+
 
 h1 {
 	font-weight: 700;
@@ -78,18 +79,19 @@ p {
 }
 
 
-
 #app {
 	display: flex;
   align-items: center;
 	min-height: 100vh;
 }
 
-/*MAIN PAGE - NAV MENU END*/
+/*main content text tittle*/
+.main-content h1 {
+	margin-left: 10rem;
+}
 
 
 /*begin page*/
-
 .begin {
 	display: flex;
   flex-direction: column;
@@ -127,10 +129,14 @@ body.universe {
   background-position: center;
   background-size: cover;
 }
-
-.universe h1 {
-	margin-left: 10rem;
-}
-
-
 /*universe page end*/
+
+
+/*explore page*/
+body.explore {
+	background-image: url('/app/assets/explore.png');
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*explore page end*/

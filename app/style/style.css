@@ -8,11 +8,18 @@
 	font-size: 62.5%;
 	background-color: #2F2F33;
 	--ff-primary: 'Roboto', sans-serif;
-	--fc-primary: #fff;
+	--fc-primary: #ffffff;
 	--fc-secondary: #e1e1e6;
 	--fc-thirdiary: #c4c4cc;
 
 	
+}
+
+body {
+	background-image: url('/app/assets/home.png');
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /*MAIN PAGE - NAV MENU*/
@@ -48,13 +55,20 @@ nav a:hover {
 	transition: 0.5s;
 }
 
-#app {
-	/* display: flex;
-	align-items: center; */
+h1 {
+	color: var(--fc-secondary);
+	font-weight: 700;
+	font-size: 4.8rem;
+	font-family: var(--ff-primary);
+	line-height: 6rem;
+	margin-bottom: 2.4rem;
+}
 
+
+
+#app {
 	display: flex;
   align-items: center;
-
 	min-height: 100vh;
 }
 
@@ -68,15 +82,6 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
 	width: 100%;
-}
-
-.begin h1 {
-	color: var(--fc-secondary);
-	font-weight: 700;
-	font-size: 4.8rem;
-	font-family: var(--ff-primary);
-	line-height: 125%;
-	margin-bottom: 2.4rem;
 }
 
 .begin a {

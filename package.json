@@ -1,0 +1,23 @@
+{
+  "name": "projeto07_spa_universe",
+  "version": "1.0.0",
+  "description": "## Project Under Construction",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan-Padovani/Explorer_projeto07_SPA_Universe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dan-Padovani/Explorer_projeto07_SPA_Universe/issues"
+  },
+  "homepage": "https://github.com/Dan-Padovani/Explorer_projeto07_SPA_Universe#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

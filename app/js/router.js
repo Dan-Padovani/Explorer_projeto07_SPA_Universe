@@ -32,10 +32,9 @@ export class Router {
 		const { pathname } = window.location
 		const { body } = document
 	
-		pathname == '/' ? body.className = 'home' : null
+		pathname == '/' ? body.className = 'home' : body.className = 'not-found'
 		pathname == '/universe' ? body.className = 'universe' : null
 		pathname == '/explore' ? body.className = 'explore' : null
-		pathname == 404 ? body.className = '404' : null
 	}
 	
 }

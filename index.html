@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="stylesheet" href="./app/style/style.css">
 </head>
-<body class="explore">
+<body class="">
 	<!-- Navigation menu -->
 	<nav>
 		<ul>
@@ -25,29 +25,59 @@
 
 	<!-- main content -->
 	<div id="app">
-		<!-- REMOVE AFTER FINISHING css -->
-		<main class="explore">
-		<h1>Exploração</h1>
-		<p>Os corpos celestes e astros sempre foram motivo de grande fascinação na humanidade. Há registros de gregos, mesopotâmicos e astecas descrevendo vários acontecimentos celestes. Na era contemporânea, vários cientistas deram grandes contribuições para que o sonho de explorar o espaço pudesse se tornar realidade, como o russo Konstantin Tsiolkovsky, o alemão Hermann Oberth e o estadunidense Robert Goddard.</p>
-		</main>
-		<!-- REMOVE ENDS -->
+		
 	</div>
 	<!-- main content end-->
 
-	<script>
-		function route(event) {
-			event = event || window.event
-			event.preventDefault()
-			
-			window.history.pushState({}, '', event.target.href)
-			
-			const pathname = window.location.pathname
-			const bd = document.body
-			
-			console.log(pathname)
-			console.log(bd)
+	<script src="/app/js/index.js" type="module">
 
-		}
+	// const mainContent = document.getElementById('app')
+
+	// const routes = {
+	// 	"/": "/app/pages/home.html",
+	// 	"/explore": "/app/pages/explore.html",
+	// 	"/universe": "/app/pages/universe.html",
+	// 	404: "/app/pages/404.html"
+	// }
+
+	// function route(event) {
+	// 	event = event || window.event
+	// 	event.preventDefault()
+	// 	window.history.pushState({}, '', event.target.href)
+
+	// 	handle()
+	// }
+
+	// function handle() {
+	// 	const { pathname } = window.location
+	// 	const route = routes[pathname] || routes[404]
+		
+	// 	fetch(route)
+	// 	.then(data => data.text())
+	// 	.then(html => {
+	// 		mainContent.innerHTML = html
+	// 	}) 
+
+	// 	changeBackgroundImage()
+	// }
+
+	// function changeBackgroundImage() {
+	// 	const { pathname } = window.location
+	// 	const { body } = document
+
+	// 	pathname == '/' ? body.className = 'home' : null
+	// 	pathname == '/universe' ? body.className = 'universe' : null
+	// 	pathname == '/explore' ? body.className = 'explore' : null
+	// 	pathname == 404 ? body.className = '404' : null
+		
+	// 	console.log(pathname)
+	// 	console.log(body.className)
+	// }
+
+	// handle()
+	// window.onpopstate = () => handle()
+	// window.route = () => route()
+
 	</script>
 </body>
 </html>

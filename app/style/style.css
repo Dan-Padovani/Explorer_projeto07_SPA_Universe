@@ -11,9 +11,8 @@
 	--fc-primary: #ffffff;
 	--fc-secondary: #e1e1e6;
 	--fc-thirdiary: #c4c4cc;
-
-	
 }
+
 /*home background page*/
 body.home {
 	background-image: url('/app/assets/home.png');

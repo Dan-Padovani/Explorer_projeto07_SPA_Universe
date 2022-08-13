@@ -31,10 +31,23 @@ export class Router {
 	changeBackgroundImage() {
 		const { pathname } = window.location
 		const { body } = document
-	
-		pathname == '/' ? body.className = 'home' : body.className = 'not-found'
-		pathname == '/universe' ? body.className = 'universe' : null
-		pathname == '/explore' ? body.className = 'explore' : null
+		
+		switch(pathname) {
+			case '/':
+				body.className = 'home'
+				break
+			case '/universe':
+				body.className = 'universe'
+				break
+			case '/explore':
+				body.className = 'explore'
+				break
+			default:
+				body.className = 'not-found'
+				break			
+		}
+		console.log(pathname)
+		console.log(body.className)
 	}
 	
 }

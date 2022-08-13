@@ -13,9 +13,10 @@
 </head>
 <body class="">
 	<!-- Navigation menu -->
-	<nav>
-		<ul>
-			<li><img src="./app/assets/logo.svg" alt="imagem do logo"></li>
+	<nav id="nav">
+		<img src="./app/assets/logo.svg" alt="imagem do logo">
+		<ul id="menu">
+			<!-- <li><img src="./app/assets/logo.svg" alt="imagem do logo"></li> -->
 			<li><a href="/" onclick="route()">Home</a></li>
 			<li><a href="/universe" onclick="route()">O Universo</a></li>
 			<li><a href="/explore" onclick="route()">Exploração</a></li>
@@ -61,15 +62,24 @@
 	// 	changeBackgroundImage()
 	// }
 
-	// function changeBackgroundImage() {
+	// changeBackgroundImage() {
 	// 	const { pathname } = window.location
 	// 	const { body } = document
-
-	// 	pathname == '/' ? body.className = 'home' : null
-	// 	pathname == '/universe' ? body.className = 'universe' : null
-	// 	pathname == '/explore' ? body.className = 'explore' : null
-	// 	pathname == 404 ? body.className = '404' : null
 		
+	// 	switch(pathname) {
+	// 		case '/':
+	// 			body.className = 'home'
+	// 			break
+	// 		case '/universe':
+	// 			body.className = 'universe'
+	// 			break
+	// 		case '/explore':
+	// 			body.className = 'explore'
+	// 			break
+	// 		default:
+	// 			body.className = 'not-found'
+	// 			break			
+	// 	}
 	// 	console.log(pathname)
 	// 	console.log(body.className)
 	// }

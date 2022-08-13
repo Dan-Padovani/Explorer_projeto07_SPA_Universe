@@ -14,36 +14,37 @@
 
 	
 }
-/*begin page*/
-body.begin {
+/*home background page*/
+body.home {
 	background-image: url('/app/assets/home.png');
 	background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-/*begin page end*/
+/*begin background page end*/
 
 
-/*universe page*/
+/*universe background page*/
 body.universe {
 	background-image: url('/app/assets/universe.png');
 	background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-/*universe page end*/
+/*universe background page end*/
 
 
-/*explore page*/
+/*explore background page*/
 body.explore {
 	background-image: url('/app/assets/explore.png');
 	background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-/*explore page end*/
+/*explore background page end*/
 
-/*MAIN PAGE - NAV MENU*/
+
+/*Main navigation menu*/
 nav {
 	display: flex;
 	align-items: center;
@@ -74,7 +75,7 @@ nav a:hover {
 	font-weight: 700;
 	transition: 0.5s;
 }
-/*MAIN PAGE - NAV MENU END*/
+/*Main navigation menu end*/
 
 
 h1 {
@@ -96,27 +97,25 @@ p {
 	margin-left: 10rem;
 }
 
-
 #app {
 	display: flex;
   align-items: center;
 	min-height: 100vh;
 }
 
-/*main content text tittle*/
-
+/*Content text tittle*/
 .explore h1,
 .universe h1 {
 	margin-left: 10rem;
 }
 
 
-/*begin page*/
-.begin {
+/*home page*/
+.home {
 	display: flex;
   flex-direction: column;
   align-items: center;
-	/* width: 100%; */
+	width: 100%;
 }
 
 .btn-know-more {
@@ -139,7 +138,4 @@ p {
 	color: #02799D;
 	transition: 0.5s;
 }
-/*begin page end*/
-
-
-
+/*home page end*/

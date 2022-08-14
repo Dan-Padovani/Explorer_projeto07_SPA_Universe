@@ -47,7 +47,7 @@ I had the oportunity to practice and study:
 
 Just access the link bellow or you can have a better experience using lite-server (node js). 
 
-<a href="#" target="_blank">SPA Universe</a>
+<a href="https://danpadovani.netlify.app/" target="_blank">SPA Universe</a>
 
 ### Pre requirements
 

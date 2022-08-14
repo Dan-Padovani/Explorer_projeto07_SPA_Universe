@@ -37,13 +37,13 @@ nav {
 	font-size: 2.4rem;
 	width: 100%;
 	height: 12.2rem;
-	margin-left: 7.2rem;
+	padding-left: 7.2rem;
 	
 }
 
 ul {
 	display: flex;
-	justify-content: space-between;
+	gap: 3.2rem;
 	list-style: none;
 	align-items: center;
 	width: 39rem;
@@ -63,6 +63,9 @@ nav a:hover {
 }
 /*Main navigation menu end*/
 
+.btn-mobile {
+	display: none;
+}
 
 h1 {
 	font-weight: 700;
@@ -131,3 +134,91 @@ p {
 	transition: 0.5s;
 }
 /*home page end*/
+
+
+
+@media (max-width: 580px) {
+	nav {
+		margin: 0;
+		justify-content: space-between;
+		padding: 0 3rem;
+		height: 9rem;
+		background: #c3c3ca24;
+	}
+
+	#menu {
+		display: flex;
+		position: absolute;
+		width: 100%;
+		height: 0;
+		top: 9rem;
+		right: 0;
+		gap: 1.8rem;
+		flex-direction: column;
+		background: #c3c3ca24;
+		transition: .4s;
+		visibility: hidden;
+		overflow-y: hidden;
+	}
+
+	#menu.active {
+		height: calc(100vh - 9rem);
+		visibility: visible;
+	}
+
+	.btn-mobile {
+		display: flex;
+		padding: 1rem 1.2rem;
+		background: none;
+		border: none;
+		cursor: pointer;
+
+	}
+
+	#three-bars {
+		display: block;
+		border-top: 3px solid;
+		width: 3rem;
+		color: var(--fc-secondary);
+	}
+
+	#three-bars::after,
+	#three-bars::before {
+		content: '';
+		display: block;
+		width: 3rem;
+		height: 3px;
+		background: currentColor;
+		margin-top: 7px;
+		transition: .3s;
+		position: relative;
+	}
+
+	#three-bars.active {
+		border-top-color: transparent;
+	}
+
+	#three-bars.active::before {
+		transform: rotate(135deg);
+	}
+
+	#three-bars.active::after {
+		transform: rotate(-135deg);
+		top: -10px;
+	}
+
+	h1 {
+		font-size: 3.8rem;
+	}
+
+	.explore h1,
+	.universe h1 {
+	margin: 0 2rem 2rem;
+	}
+
+	p {
+		padding: 0 2rem;
+		width: 100%;
+		margin: 0;
+	}
+}

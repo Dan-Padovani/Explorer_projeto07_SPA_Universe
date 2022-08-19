@@ -45,9 +45,6 @@ export class Router {
 			default:
 				body.className = 'not-found'
 				break			
-		}
-		console.log(pathname)
-		console.log(body.className)
-	}
-	
+		}		
+	}	
 }
